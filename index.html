@@ -9,6 +9,14 @@
   </head>
   <body>
     <div id="gameBoard" class="flex">
+      <div class=”mobile”>
+<p class=”faceCards hidden”>Jack=11 Queen=12 King=13</p>
+<p class=”compareDirections hidden”>Click on the card that shows a greater amount.</p>
+<p class=”addDirections hidden”>Add the card amounts together.</p>
+<p class=”multiplyDirections hidden”>Multiply the card amounts together.</p>
+<p class=”subtractDirections hidden”>Player’s card minus Computer’s card
+<p class=”integerDirections hidden”>Black is positive. Red is negative.</p>
+</div>
       <div class="flexColumn">
         <h1>War!</h1>
         <h2 id="winner">Winner</h2>
@@ -17,21 +25,26 @@
       </div>
       <h1 id="draw">Draw</h1>
       <div class="flex">
-        <div id="firstPlayer" class="flexColumn player">
+        <div id="Player" class="flexColumn player">
           <h1>First Player</h1>
-          <div id="firstPlayerNumber" class="number">
+          <div id="PlayerNumber" class="number">
           </div>
-          <div id="firstPlayerSuit" class="suit">
+          <div id="PlayerSuit" class="suit">
           </div>
         </div>
-        <div id="secondPlayer" class="flexColumn player">
+        <div id="Computer" class="flexColumn player">
           <h1>Second Player</h1>
-          <div id="secondPlayerNumber" class="number">
+          <div id="ComputerNumber" class="number">
           </div>
-          <div id="secondPlayerSuit" class="suit">
+          <div id="ComputerSuit" class="suit">
           </div>
           <div id=”practice” style=”font-size:2rem;”></div>
         </div>
+        <div class="hidden">
+        <input value="answer" id="answer"></input>
+      </div>
+        <input id="playerAnswer">
+        <button id="submit">Check</button>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

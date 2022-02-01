@@ -25,7 +25,6 @@ h2{margin: 1rem 0;}
   overflow: hidden;
   cursor: pointer;
 }
-
 #draw:after {
   content: "";
   background: #90EE90;
@@ -38,10 +37,17 @@ h2{margin: 1rem 0;}
   opacity: 0;
   transition: all 0.8s
 }
-
 #draw:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
   transition: 0s
 }
+.hidden{display:none;}
+.winner{flex-grow:1;}
+.answer{background-color:#04AA6D; padding:1rem; margin:1rem; font-size:1.3rem; color:#fff}
+span {margin-left: 1rem;}
+.answer:hover{color:red; cursor:pointer;}
+input{margin:1rem 0;}
+.hidden{display:none}
+p{font-size:1.2rem}
